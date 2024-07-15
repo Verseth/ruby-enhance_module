@@ -62,6 +62,7 @@ module Foo
     # to your module to make it support
     # extending objects
     class << self
+        extend T::Sig
         include EnhanceModule
         has_attached_class! { { fixed: Foo } }
     end

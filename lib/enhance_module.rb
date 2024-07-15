@@ -10,7 +10,10 @@ require_relative "enhance_module/version"
 #     require "enhance_module"
 #
 #     module MyModule
+#       extend T::Sig
+#
 #       class << self
+#         extend T::Generic
 #         include EnhanceModule
 #         has_attached_class! { { fixed: MyModule } }
 #       end
