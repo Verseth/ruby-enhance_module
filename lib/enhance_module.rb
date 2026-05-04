@@ -40,7 +40,7 @@ require_relative "enhance_module/version"
 module EnhanceModule
   extend T::Sig
   extend T::Generic
-  has_attached_class!
+  has_attached_class!(:out)
 
   sig do
     type_parameters(:T)
